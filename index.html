@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Saint.Life | Saint.Life</title><meta name="description" content="saint's dev blog"><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="/favicon.ico" type="image/x-icon"><link href='/feed.xml' rel='alternate' type='application/atom+xml'><link rel="canonical" href="/index.html"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/default.min.css"> <script src="//unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script> <script> function handleClick(url) { console.log("WOEOEOE"); const isTextSelected = window.getSelection().toString(); if (!isTextSelected) { location.href = url; } } </script><style> .hljs { color: unset; background: #282828; } .hljs-built_in { color: #a7557e; } pre code.hljs { padding: 0; padding-left: 1rem; padding-bottom: 1rem; }</style><body> <script>hljs.highlightAll();</script> <script> function cat(event) { console.log("woof"); } </script><main><header> <a class="title" onclick="location.href='/'">Saint.Life</a><div class="links"> <a class="header-link" href="/posts">posts</a> <a class="header-link">github</a> <a class="header-link">youtube</a> <a class="header-link">wiki</a></div></header><!--<nav class="sans"> --> <!-- <input class="menu-btn" type="checkbox" id="menu-btn" /> --> <!--<p><label class="menu-icon" for="menu-btn">Menu</label></p>--> <!--<ul class="site-nav"> --> <!--<li><a href="/">Home</a> --> <!--<li><a href="/articles">Articles</a> --> <!--</ul>--> <!--</nav>--> <!--<div onclick="location.href='/2019/01/14/new-post/'" class='preview-post'> --><div onclick="handleClick('/2019/01/14/new-post/')" class='preview-post'> <a class='title-list' href="/2019/01/14/new-post/">Python walrus update if </a><div class="date-list"> Jan 14, 2019</div><div class='snippet'><p>A pretty (common) use case is to have a variable update only upon a condition. For example updating a minLength value:</p><pre class="code">
+<code class="language-python">
+if minLength &gt; len(cat)- len(dog):
+  minLength = len(cat) - len(cat)
+</code>
+</pre><p>Which is inefficient because it has to do the calculation twice, plus you have to type it out. Typically the optimization would be</p><pre class="code">
+<code class="language-python">
+lenDiff = len(cat) - len(dog):
+if minLength &gt; lenDiff:
+  minLength = lenDiff
+</code>
+</pre><p>With python’s walrus operator, you can do an assign statement inside an if statement</p><pre class="code">
+<code class="language-python">
+if minLength &gt; lenDiff:= len(cat) - len(dog):
+  minLength = lenDiff
+  </code>
+</pre><div class="div-continue"> <a class='continue' href="/2019/01/14/new-post/">Continue reading →</a></div></div><hr/> <!--<div class='spacer'></div>--></div><!-- Pagination links --><div class="pagination"> <a class="pagecontrol previous dim">&nbsp;←&nbsp;</a> <span class="page_number "> 1 of 1 </span> <a class="next pagecontrol dim">&nbsp;→&nbsp;</a></div></main><div class="bottom-footer">†</div>
